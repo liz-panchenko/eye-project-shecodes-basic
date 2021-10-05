@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 👀 facts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: linear-gradient(180deg, #95f2ed 3.65%, #64beca 100%);
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .main-container {
+        display: block;
+        margin: 44px auto;
+        padding-bottom: 15px;
+        width: 1113px;
+        height: max-content;
+        background-color: #ddfffd;
+        border-radius: 10px;
+        zoom: 85%;
+      }
+
+      h1 {
+        margin-bottom: 0px;
+        padding-top: 90px;
+        font-style: italic;
+        font-weight: 800;
+        font-size: 105px;
+        line-height: 128px;
+        text-align: center;
+        -webkit-text-stroke: 5px #ffb649;
+        -webkit-text-fill-color: #ddfffd;
+      }
+
+      h2 {
+        margin: 0 auto 30px;
+        font-style: italic;
+        font-weight: 800;
+        font-size: 55px;
+        line-height: 67px;
+        text-align: center;
+        color: #ffb649;
+      }
+
+      img {
+        display: block;
+        margin: 0px auto;
+        width: 600px;
+        height: 400px;
+        border-radius: 4px;
+      }
+
+      table {
+        margin: 40px auto 20px;
+      }
+
+      td {
+        padding: 30px 3px;
+      }
+
+      .number {
+        width: 67px;
+        height: 117px;
+        font-style: italic;
+        font-weight: 800;
+        font-size: 96px;
+        line-height: 117px;
+        text-align: right;
+        color: #ffb649;
+      }
+
+      .card-container {
+        position: relative;
+        width: 800px;
+        height: 164px;
+        margin: 0px auto;
+      }
+
+      .card {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: all 0.75s ease-in-out;
+        transform-style: preserve-3d;
+      }
+
+      .card:hover {
+        transform: rotateX(180deg);
+      }
+
+      .front,
+      .back {
+        backface-visibility: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 8px 8px 15px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .front {
+        background-color: #64beca;
+        color: #ffffff;
+        text-align: center;
+        font-style: italic;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 37px;
+      }
+
+      .back {
+        transform: rotateX(180deg);
+        background-color: #fff;
+        color: #64beca;
+      }
+      .back p {
+        margin: 7px auto;
+        border: 2px solid #ffd698;
+        padding: 27px 16px;
+        border-radius: 10px;
+        width: 750px;
+        height: 92px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+      }
+
+      .link {
+        font-style: normal;
+        font-size: 25px;
+        line-height: 30px;
+        color: #64beca;
+        width: 550px;
+        margin: 35px auto;
+      }
+
+      a {
+        text-decoration: none;
+        color: #ffb649;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      button {
+        display: block;
+        margin: 50px auto 70px;
+        background: rgba(255, 182, 73, 1);
+        border: 3px solid rgba(255, 182, 73, 1);
+        border-radius: 300px;
+        color: #fff;
+        font-style: italic;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 37px;
+        padding: 40px 39px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.1) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #fff;
+        color: #64beca;
+      }
+
+      .visualIllusion {
+        margin: 30px;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .visualIllusionHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .cartoon-eyes {
+        width: 79px;
+        height: 53px;
+        margin: 0 27px;
+      }
+
+      .visualIllusionHeader p {
+        width: 810px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #64beca;
+      }
+
+      .visualIllusionImage {
+        width: 388px;
+        height: 388px;
+        margin: 38px auto;
+      }
+
+      .visualIllusionText {
+        width: 810px;
+        margin: 60px auto;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        color: #ffb649;
+      }
+
+      footer {
+        text-align: center;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scale">
+      <div class="main-container">
+        <h1>5 FACTS</h1>
+        <h2>
+          you probably didn't know <br />
+          about human eye
+        </h2>
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/644/original/colin-lloyd-suj3od1uMv8-unsplash_1.png?1628163025"
+          alt="Eye picture"
+        />
+
+        <table>
+          <tbody>
+            <tr>
+              <td class="number">1.</td>
+              <td>
+                <div class="card-container">
+                  <div class="card">
+                    <div class="front">ORIGINALLY, ALL EYES WERE BROWN</div>
+                    <div class="back">
+                      <p>
+                        It is believed that blue eyes didn’t start showing up
+                        until about 6,000 years ago when a genetic mutation
+                        developed that led to blue eyes. That means that all
+                        blue-eyed people are related. Brown is still the most
+                        common eye colour (approximately 79% of the world’s
+                        population has been recorded to have brown eyes).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="number">2.</td>
+              <td>
+                <div class="card-container">
+                  <div class="card">
+                    <div class="front">
+                      THE HUMAN EYE ONLY SEES THREE COLOURS.
+                    </div>
+                    <div class="back">
+                      <p>
+                        Our eyes can distinguish over 500 shades of grey,
+                        meanwhile are able to recognise only three colours: red,
+                        blue and green. All other colours are a mix of the
+                        three.
+                        <br />2 percent of women have a rare mutation that
+                        allows them to see 100 million colours with the help of
+                        an extra membrane on their retina. 1 in 12 men do not
+                        distinguish colours.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="number">3.</td>
+              <td>
+                <div class="card-container">
+                  <div class="card">
+                    <div class="front">
+                      YOUR EYES ARE ALMOST THE SAME SIZE <br />
+                      AS THEY WERE WHEN YOU WERE BORN
+                    </div>
+                    <div class="back">
+                      <p>However, the ears and nose never stop growing.</p>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="number">4.</td>
+              <td>
+                <div class="card-container">
+                  <div class="card">
+                    <div class="front">
+                      IF THE LENS OF YOUR EYE WAS A CAMERA, <br />
+                      IT WOULD BE 576 MEGAPIXELS
+                    </div>
+                    <div class="back">
+                      <p>
+                        The lens on the human eye is much faster than that of a
+                        camera. <br />
+                        Also, eyes can process 36,000 bits of information per
+                        hour.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="number">5.</td>
+              <td>
+                <div class="card-container">
+                  <div class="card">
+                    <div class="front">WE ACTUALLY SEE THINGS USPIDE DOWN.</div>
+                    <div class="back">
+                      <p>
+                        Images arrive at your eye upside-down, split in half and
+                        distorted. Your brain flips the image for you so
+                        naturally that you're perceiving everything right side
+                        up. Plus, images start divided in half and distorted as
+                        each one of your eyes perceives the world. Your brain
+                        then goes to work pairing the images together to give
+                        you one, clean panoramic view.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="link">
+          See
+          <a
+            href="https://www.healthline.com/human-body-maps/eye#1"
+            target="_blank"
+            >here:
+          </a>
+          3D Interactive Human Eye Model
+        </p>
+        <button>Get an interactive fact</button>
+        <div class="visualIllusion hidden">
+          <div class="visualIllusionHeader">
+            <img
+              class="cartoon-eyes"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/662/original/cartoon-eyes.png?1628246293"
+              alt="cartoon-eyes"
+            />
+            <p>
+              Let’s look at the illusion below. If you focus your gaze on the
+              centre green dot, the three surrounding yellow dots will soon
+              disappear.
+            </p>
+          </div>
+          <img
+            class="visualIllusionImage"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/661/original/optical-visual-contrast-1-dots.gif?1628246075"
+            alt="Visual Illusion"
+          />
+          <p class="visualIllusionText">
+            The effect is a good way to demonstrate what is known as
+            motion-induced blindness (MIB)—a phenomenon in which motionless
+            elements disappear in front of an observer’s eyes when masked with a
+            moving background.
+          </p>
+        </div>
+      </div>
+      <footer>
+        Coded by
+        <a href="https://github.com/liz-panchenko/eye-project-shecodes-basic"
+          >Liz Panchenko</a
+        >
+      </footer>
+      <script>
+        function getFact() {
+          let name = prompt("What is your name?");
+          let knowledge = prompt("Did you know all these facts?");
+          knowledge = knowledge.toLowerCase().trim();
+          if (knowledge === "yes") {
+            alert(
+              `You are incredible! Below you'll find one visual illusion for you. Thanks for your time, ${name}.
+          See 👀 you!`
+            );
+          } else {
+            alert(
+              `I hope it was interesting! Below you'll find one visual illusion for you. Thanks for your time, ${name}.
+          See 👀 you!`
+            );
+          }
+          let illusionImage = document.querySelector(".visualIllusion");
+          illusionImage.classList.remove("hidden");
+        }
+
+        let applyButton = document.querySelector("button");
+        applyButton.addEventListener("click", getFact);
+      </script>
+    </div>
+  </body>
+</html>
